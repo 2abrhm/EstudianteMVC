@@ -17,6 +17,9 @@ import java.util.List;
  * Controlador le entrega ya preparados. Así la Vista queda desacoplada
  * del Modelo y toda la comunicación pasa por el Controlador.
  */
+
+//abraham estuvo aqui
+
 public class EstudianteView extends JFrame {
 
     // ── Componentes UI ────────────────────────────────────────────────────────
