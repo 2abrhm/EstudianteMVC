@@ -119,7 +119,5 @@ public class EstudianteController {
         return filas;
     }
 
-    // ── Punto de entrada de la aplicación ─────────────────────────────────────
-
    
 }
