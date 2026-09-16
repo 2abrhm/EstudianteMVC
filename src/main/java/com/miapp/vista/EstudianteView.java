@@ -25,10 +25,13 @@ public class EstudianteView extends JFrame {
     // ── Componentes UI ────────────────────────────────────────────────────────
     private JTextField             txtNombre;
     private JButton                btnBuscar;
+    private JButton                btnMostrarTodos;
     private JTable                 tblResultados;
     private DefaultTableModel      modeloTabla;
     private JLabel                 lblEstado;
-
+    private JTextField             Aggnombre;
+    private JTextField             aggCarrera;
+    private JTextField             aggPromedio;
     // ── Controlador ───────────────────────────────────────────────────────────
     private EstudianteController controlador;
 
@@ -59,9 +62,18 @@ public class EstudianteView extends JFrame {
         btnBuscar.setForeground(Color.WHITE);
         btnBuscar.setFocusPainted(false);
 
+        //boton mostrar todos
+        
+        btnMostrarTodos = new JButton("Mostrar todos");
+        btnMostrarTodos.setBackground(new Color(135, 206, 235));
+        btnMostrarTodos.setForeground(Color.YELLOW);
+        btnMostrarTodos.setFocusPainted(false);
+        
+        
         panelBusqueda.add(lblNombre);
         panelBusqueda.add(txtNombre);
         panelBusqueda.add(btnBuscar);
+        panelBusqueda.add(btnMostrarTodos);
 
         // Panel central — tabla de resultados
         String[] columnas = {"ID", "Nombre", "Carrera", "Promedio"};
